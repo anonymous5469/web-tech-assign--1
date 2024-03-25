@@ -1,0 +1,136 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, w3-cursive;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #46a7d0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav-links a:hover {
+            color: #dd5656;
+            transition: color 0.5s ease;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #319df6;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        p {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .product img {
+            width: 50%;
+            height: auto;
+        }
+
+        .product div {
+            width: 50%;
+            padding: 20px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">INTEROFURNISH</div>
+        <ul class="nav-links">
+            <li><a href="website.html">Home</a></li>
+            <li><a href="websitelogin.html">Login</a></li>
+            <li><a href="websitesignup.html">Sign Up</a></li>
+            
+            </li>
+        </ul>
+        
+    </nav>
+    <h1>Welcome to Interofurnish!</h1>
+    <p>
+        Interofurnish is your one-stop destination for all your furniture needs. We offer a wide range of high-quality furniture items, from chairs and tables to sofas and more. Our products are designed with a focus on style, comfort, and durability. Whether you're furnishing your new home or updating your current space, you'll find everything you need at Interofurnish. Start exploring our collection today!
+    </p>
+    <img src="interior design.png" alt="interior design">
+    <div class="product">
+        <img src="sofas.jpg" alt="Sofas">
+        <div>
+        <h2>Sofas</h2>
+        <p>Our sofas are designed for comfort, durability, and style. They are available in a variety of designs and materials to suit your home decor.</p>
+        <a href="sofas.html">show more</a>
+    </div>
+</div>
+    
+    <div class="product">
+        <img src="chair.jpg" alt="Chairs">
+        <div>
+        <h2>Chairs</h2>
+        <p>Our chairs are ergonomically designed for maximum comfort. They are perfect for your living room, dining room, or office.</p>
+        <a href="chair.html">show more</a>
+    </div>
+</div>
+    <div class="product">
+        <img src="table.jpg" alt="Tables">
+        <div>
+        <h2>Tables</h2>
+        <p>Our tables are sturdy and stylish. They are available in a variety of sizes and designs to fit your space and needs.</p>
+        <a href="tables.html">show more</a>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <div class="footer">
+        <p>&copy; 2024 Interofurnish. All rights reserved.</p>
+    </div>
+</body>
+</html>

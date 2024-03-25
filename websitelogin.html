@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - INTEROFURNISH</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #loginForm {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #36c0c5;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #36c0c5;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('login_img2.jpg');
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        .signup-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="event.preventDefault(); redirectToHomePage();">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <p class="signup-text">don't have an account? <a href="websitesignup.html"<br>Sign Up Here<br></a></p>
+    <script>
+        function redirectToHomePage() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === '' || password === '') {
+                alert('Please fill in all the details');
+                return;
+            }
+            window.location.href = "website.html";
+        }
+    </script>
+
+    <script src="login.js"></script>
+</body>
+</html>
